@@ -58,11 +58,11 @@ class _Practical12State extends State<Practical12> {
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
         appBar: new AppBar(
-          title: new Text('Practical 12'),
+          title: new Text('17it131_Practical-12'),
         
         ),
         body: new Padding(
-            padding: new EdgeInsets.all(8.0),
+            padding: new EdgeInsets.all(15.0),
             child: new Center(
               child: new Column(
                 mainAxisSize: MainAxisSize.min,
@@ -70,14 +70,14 @@ class _Practical12State extends State<Practical12> {
                 children: [
                   new Expanded(
                       child: Container(
-                    width: 500,
-                    height: 500,
-                    color: Colors.pink,
+                    width: 300,
+                    height: 300,
+                    color: Colors.blueGrey,
                     child: Center(
                         child: new Text(transcription,
                             style: TextStyle(
-                              fontSize: 40.0,
-                              color: Colors.white,
+                              fontSize: 30.0,
+                              color: Colors.black45,
                               fontWeight: FontWeight.bold,
                             ),
                             textAlign: TextAlign.center)),
@@ -87,7 +87,7 @@ class _Practical12State extends State<Practical12> {
                         ? () => start()
                         : null,
                     label:
-                        _isListening ? 'Listening...' : 'Tap on Mic to Speak',
+                        _isListening ? 'Listening...' : 'TaP HeRe & SpEaK',
                   ),
                 ],
               ),
@@ -97,9 +97,9 @@ class _Practical12State extends State<Practical12> {
   }
 
   Widget _buildButton({String label, VoidCallback onPressed}) => new Padding(
-      padding: new EdgeInsets.only(top: 8, bottom: 2, left: 0, right: 0),
+      padding: new EdgeInsets.only(top: 8, bottom: 2, left: 40, right: 40),
       child: new RaisedButton(
-        color: Colors.white,
+        color: Colors.blueAccent,
         onPressed: onPressed,
         padding: EdgeInsets.all(20.0),
         child: Row(
@@ -107,11 +107,11 @@ class _Practical12State extends State<Practical12> {
           children: <Widget>[
             Icon(
               Icons.mic_none,
-              size: 60.0,
+              size: 50.0,
             ),
             Text(
               label,
-              style: const TextStyle(color: Colors.pink, fontSize: 25.0),
+              style: const TextStyle(color: Colors.black, fontSize: 25.0),
             ),
           ],
         ),
