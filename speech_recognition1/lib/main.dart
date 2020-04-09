@@ -58,7 +58,7 @@ class _Practical12State extends State<Practical12> {
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
         appBar: new AppBar(
-          title: new Text('17it131_Practical-12'),
+          title: new Text('17it114 - Prac12'),
         
         ),
         body: new Padding(
@@ -77,7 +77,7 @@ class _Practical12State extends State<Practical12> {
                         child: new Text(transcription,
                             style: TextStyle(
                               fontSize: 30.0,
-                              color: Colors.black45,
+                              color: Colors.white10,
                               fontWeight: FontWeight.bold,
                             ),
                             textAlign: TextAlign.center)),
@@ -87,7 +87,7 @@ class _Practical12State extends State<Practical12> {
                         ? () => start()
                         : null,
                     label:
-                        _isListening ? 'Listening...' : 'TaP HeRe & SpEaK',
+                        _isListening ? 'Listening...' : 'Tap Here and Speak',
                   ),
                 ],
               ),
@@ -97,9 +97,9 @@ class _Practical12State extends State<Practical12> {
   }
 
   Widget _buildButton({String label, VoidCallback onPressed}) => new Padding(
-      padding: new EdgeInsets.only(top: 8, bottom: 2, left: 40, right: 40),
+      padding: new EdgeInsets.only(top: 8, bottom: 2, left: 30, right: 30),
       child: new RaisedButton(
-        color: Colors.blueAccent,
+        color: Colors.white30,
         onPressed: onPressed,
         padding: EdgeInsets.all(20.0),
         child: Row(
